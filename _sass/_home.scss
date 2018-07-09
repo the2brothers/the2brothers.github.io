@@ -1,0 +1,57 @@
+.home {
+  text-align: center;
+
+  .home-logo {
+    margin: 2rem 0 2.4rem;
+
+    img {
+      width: 65rem;
+    }
+  }
+
+  .header {
+    flex-flow: column;
+
+    .logo {
+      display: none;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: column;
+    }
+
+    li {
+      margin-right: 0;
+    }
+
+    a {
+      font-size: 3.2rem;
+      line-height: 2;
+      text-align: center;
+    }
+  }
+}
+
+@include media-query($on-palm) {
+  .home {
+    .home-logo {
+      display: none;
+    }
+
+    .header {
+      .logo {
+        display: block;
+        margin-right: 0;
+      }
+
+      a {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}

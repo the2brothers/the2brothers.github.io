@@ -1,35 +1,35 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<div class="footer">
+  {%- if site.social_links.size > 0 -%}
+  <ul class="social-links">
+    {%- for link in site.social_links -%}
+    <li>
+      <a href="{{ link.url }}">
+        <i class="{{ link.icon }}"></i>
+        <span>{{ link.title }}</span>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+  {%- if site.contact.email or site.contact.phone -%}
+  <ul class="contact">
+    {%- if site.contact.email -%}
+    <li>
+      <i class="far fa-envelope"></i>
+      <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+      <i class="far fa-envelope"></i>
+    </li>
+    {%- endif -%}
+    {%- if site.contact.phone -%}
+    <li>
+      <a href="skype:+34{{ site.contact.phone | replace: ' ', '' }}">
+        <i class="fas fa-phone"></i>
+        {{ site.contact.phone }}
+        <i class="fas fa-phone"></i>
+      </a>
+    </li>
+    {%- endif -%}
+  </ul>
+  {%- endif -%}
+</div>

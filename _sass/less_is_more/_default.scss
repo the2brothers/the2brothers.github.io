@@ -1,0 +1,54 @@
+.header {
+  align-items: center;
+  display: flex;
+
+  .logo {
+    margin-right: 2.4rem;
+
+    a {
+      display: block;
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: $primary-text-color;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 1.6rem;
+
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+@include media-query($on-palm) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+
+    .logo {
+      margin-right: 0;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    ul {
+      font-size: 2.4rem;
+    }
+  }
+}
