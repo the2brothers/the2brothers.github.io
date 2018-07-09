@@ -1,5 +1,5 @@
 ---
-title: Noticias
+title: Artículos
 layout: default
 permalink: /news/
 menu_order: 5

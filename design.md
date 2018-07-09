@@ -1,5 +1,5 @@
 ---
-title: Diseño
+title: Diseño Web
 layout: default
 permalink: /design/
 menu_order: 0
