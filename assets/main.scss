@@ -4,9 +4,14 @@
 @import 'less_is_more';
 
 .dev {
-  .wrapper {
+  .thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 1.6rem;
+
     img {
-      width: 32rem;
+      width: 25rem;
     }
   }
 }
