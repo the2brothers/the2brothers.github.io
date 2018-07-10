@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
-  <body>
-    <div class="container home">
+  <body class="{{ page.class | default: 'home' }}">
+    <div class="container">
       <div class="home-logo">
         <a href="{{ '/' | relative_url }}" class="home-header">
           <img src="{{ '/assets/images/home-logo.png' | relative_url }}" alt="">
