@@ -4,6 +4,9 @@ layout: default
 permalink: /dev/
 menu_order: 1
 ---
-# {{ page.title }}
 
-**Lorem ipsum** dolor sit amet, consectetur adipiscing elit. Ut in erat eu lorem imperdiet pulvinar. Suspendisse sollicitudin eros ligula, a venenatis sem placerat nec. Vivamus ac ligula vel sem lobortis mattis nec in turpis. Cras gravida metus massa, et volutpat eros aliquet et. Etiam eu dapibus elit. In bibendum purus id turpis elementum aliquet. Aenean nec eros molestie, venenatis nisl sit amet, maximus turpis. Phasellus vestibulum fringilla placerat. Nam non velit nec tellus commodo faucibus eget vitae ipsum. Sed vitae est posuere ante pulvinar scelerisque ut id mauris.
+## Gestor de Contentidos Universal
+
+Desarrollar un sitio web puede ser una tarea relativamente sencilla. Pero todo sitio web precisa de un sistema que permita a los usuarios modificar el contendido de cada una de sus páginas o secciones. Mediante esta aplicación podemos gestionar los contenidos de cualquier sitio web, **sin importar cómo haya sido desarrollado**. Y aquí radica su principal virtud, ya que permite al equipo de desarrollo usar el framework que consideren más oportuno.
+
+Se trata de un Gestor de Contenidos que hemos usado en infinidad de proyectos, con gran satisfacción por parte del cliente, y de la que nos sentimos especialmente orgullosos.
