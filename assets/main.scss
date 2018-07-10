@@ -2,3 +2,11 @@
 # main file
 ---
 @import 'less_is_more';
+
+.dev {
+  .wrapper {
+    img {
+      width: 32rem;
+    }
+  }
+}
